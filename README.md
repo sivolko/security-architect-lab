@@ -8,8 +8,8 @@
 > A comprehensive repository for learning Azure security architecture through vulnerable scenarios and secure solutions.
 
 ## Project Structure 
-
-azure-security-architecture-lab/
+```
+Cyber-security-architecture-lab/
 |
 |-- README.md
 |-- CONTRIBUTING.md
@@ -364,6 +364,7 @@ azure-security-architecture-lab/
         |-- templates/
         |-- tools/
         |-- guides/
+```
 
 ## 🚀 Quick Start
 
