@@ -1,0 +1,15 @@
+Vulnerable Architecture Diagram:
+
+```mermaid
+graph TD
+    Internet([Internet]) --> LB[Load Balancer<br/>Public IP: 20.1.1.100]
+    LB --> VM1[Web VM 1<br/>Public IP: 20.1.1.101<br/>RDP: 0.0.0.0/0]
+    LB --> VM2[Web VM 2<br/>Public IP: 20.1.1.102<br/>RDP: 0.0.0.0/0]
+    VM1 --> SQL[(SQL Database<br/>Public Endpoint<br/>Allows all Azure services)]
+    VM2 --> SQL
+    
+    style Internet fill:#ff6b6b
+    style LB fill:#ff9999
+    style VM1 fill:#ff9999
+    style VM2 fill:#ff9999
+    style SQL fill:#ff6b6b
